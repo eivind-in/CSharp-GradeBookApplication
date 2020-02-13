@@ -25,8 +25,14 @@ namespace GradeBook.GradeBooks
             }
             if(averageGrade >= 80)
                 return 'A';
-
-            return 'F';
+            else if(averageGrade >= 60)
+                return 'B';
+            else if(averageGrade >= 40)
+                return 'C';
+            else if(averageGrade >= 20)
+                return 'D';
+            else
+                return 'F';
         }
     }
     
