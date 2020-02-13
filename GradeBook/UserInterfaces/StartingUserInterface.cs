@@ -42,11 +42,11 @@ namespace GradeBook.UserInterfaces
             var name = parts[2];
             if(name == "standard")
             {
-                StandardGradeBook gradeBook = new StandardGradeBook(name);
+                StandardGradeBook gradeBook = new StandardGradeBook(name, bool.Parse(parts[3]));
             }
             else if(name == "ranked")
             {
-                RankedGradeBook gradeBook = new RankedGradeBook(name);
+                RankedGradeBook gradeBook = new RankedGradeBook(name, bool.Parse(parts[3]));
             }
             else
             {
